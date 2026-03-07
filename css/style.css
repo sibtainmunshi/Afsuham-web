@@ -1,0 +1,253 @@
+@keyframes subtleZoom {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+.animate-zoom {
+    animation: subtleZoom 20s ease-in-out infinite alternate;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-down {
+    animation: fadeInDown 0.4s ease-out forwards;
+}
+
+/* --- Fixed Smooth Dots Animation --- */
+@keyframes moveDots {
+    0% { background-position: 0px 0px; }
+    100% { background-position: 35px 35px; } /* Fixed to match background-size for smooth loop */
+}
+.animate-dots {
+    animation: moveDots 2.5s linear infinite;
+}
+
+@keyframes floatBlob {
+    0% { transform: translate(0px, 0px) scale(1); }
+    33% { transform: translate(30px, -50px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+    100% { transform: translate(0px, 0px) scale(1); }
+}
+.animate-blob {
+    animation: floatBlob 12s ease-in-out infinite;
+}
+.animation-delay-2000 {
+    animation-delay: 2s;
+}
+.animation-delay-4000 {
+    animation-delay: 4s;
+}
+
+/* Professional Font Setup */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    transition: direction 0.3s ease-in-out;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+}
+
+/* Modern Dropdown Hover Effect */
+.nav-item:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Arrow rotation on hover */
+.nav-item:hover .nav-arrow {
+    transform: rotate(180deg);
+}
+
+/* Transparent bridge to prevent dropdown from closing */
+.dropdown-bridge {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: transparent;
+    z-index: 40;
+}
+
+/* Smooth dropdown animation */
+.dropdown-menu {
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dropdown link hover effect */
+.dropdown-link {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.dropdown-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #0f82c4, #60a5fa);
+    transition: width 0.35s ease;
+}
+
+.dropdown-link:hover::after {
+    width: 100%;
+}
+
+.dropdown-link:hover {
+    transform: translateX(6px);
+    color: #0f82c4 !important;
+    border-color: #0f82c4 !important;
+}@keyframes subtleZoom {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+.animate-zoom {
+    animation: subtleZoom 20s ease-in-out infinite alternate;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-down {
+    animation: fadeInDown 0.4s ease-out forwards;
+}
+
+/* --- Fixed Smooth Dots Animation --- */
+@keyframes moveDots {
+    0% { background-position: 0px 0px; }
+    100% { background-position: 35px 35px; } /* Fixed to match background-size for smooth loop */
+}
+.animate-dots {
+    animation: moveDots 2.5s linear infinite;
+}
+
+@keyframes floatBlob {
+    0% { transform: translate(0px, 0px) scale(1); }
+    33% { transform: translate(30px, -50px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+    100% { transform: translate(0px, 0px) scale(1); }
+}
+.animate-blob {
+    animation: floatBlob 12s ease-in-out infinite;
+}
+.animation-delay-2000 {
+    animation-delay: 2s;
+}
+.animation-delay-4000 {
+    animation-delay: 4s;
+}
+
+/* Professional Font Setup */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    transition: direction 0.3s ease-in-out;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+}
+
+/* Dropdown transition */
+.nav-item:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Transparent border to bridge the gap between nav item and dropdown */
+.dropdown-bridge {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: transparent;
+}
+
+/* Arabic Font support */
+html[dir="rtl"] body {
+    font-family: 'Tajawal', 'Cairo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Adjustments for RTL Dropdowns */
+html[dir="rtl"] .dropdown-menu {
+    left: auto;
+    right: -4px;
+}
+html[dir="rtl"] .nav-item:nth-child(2) .dropdown-menu {
+    left: auto;
+    right: -200px;
+}
+
+/* Smooth text transition */
+[data-en], [data-ar], [data-zh], [data-pt] {
+    transition: opacity 0.3s ease;
+}
+
+/* Modern Organic Shapes for Images */
+.organic-shape-left {
+    border-radius: 250px 30px 250px 30px;
+}
+.organic-shape-right {
+    border-radius: 30px 250px 30px 250px;
+}
+html[dir="rtl"] .organic-shape-left {
+    border-radius: 30px 250px 30px 250px;
+}
+html[dir="rtl"] .organic-shape-right {
+    border-radius: 250px 30px 250px 30px;
+}
+
+/* Utility for 2-line truncation */
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+html[dir="rtl"] .dropdown-link:hover {
+    transform: translateX(-6px);
+}
+
+/* Arabic Font support */
+html[dir="rtl"] body {
+    font-family: 'Tajawal', 'Cairo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Adjustments for RTL Dropdowns */
+html[dir="rtl"] .dropdown-menu {
+    left: auto;
+    right: -4px;
+}
+html[dir="rtl"] .nav-item:nth-child(2) .dropdown-menu {
+    left: auto;
+    right: -200px;
+}
+
+/* Smooth text transition */
+[data-en], [data-ar], [data-zh], [data-pt] {
+    transition: opacity 0.3s ease;
+}
+
+/* Modern Organic Shapes for Images */
+.organic-shape-left {
+    border-radius: 250px 30px 250px 30px;
+}
+.organic-shape-right {
+    border-radius: 30px 250px 30px 250px;
+}
+html[dir="rtl"] .organic-shape-left {
+    border-radius: 30px 250px 30px 250px;
+}
+html[dir="rtl"] .organic-shape-right {
+    border-radius: 250px 30px 250px 30px;
+}
+
+/* Utility for 2-line truncation */
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}

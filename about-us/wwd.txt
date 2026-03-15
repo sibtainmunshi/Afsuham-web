@@ -19,3 +19,9 @@
             </p>
         </div>
     </section>
+    <!-- Slide 8: Singapore -->
+<img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?q=80&w=2000&auto=format&fit=crop" loading="lazy" decoding="async" class="hero-slide absolute inset-0 w-full h-full object-cover transition-opacity duration-[1500ms] ease-in-out opacity-0 animate-zoom" alt="Singapore Skyline" />
+<!-- Slide 8: Singapore -->
+<img src="https://images.unsplash.com/photo-1534008897995-28e67a0753b8?q=80&w=2000&auto=format&fit=crop" loading="lazy" decoding="async" class="hero-slide absolute inset-0 w-full h-full object-cover transition-opacity duration-[1500ms] ease-in-out opacity-0 animate-zoom" alt="Singapore Skyline" />
+<!-- Slide 8: Singapore -->
+<img src="https://images.unsplash.com/photo-1496898382531-1e9bf434446c?q=80&w=2000&auto=format&fit=crop" loading="lazy" decoding="async" class="hero-slide absolute inset-0 w-full h-full object-cover transition-opacity duration-[1500ms] ease-in-out opacity-0 animate-zoom" alt="Singapore Skyline" />

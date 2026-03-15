@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What We Believe | Afsuham Holdings Inc</title>
+    <meta name="description" content="We believe that bold steps define the future. Discover Afsuham's core values, mission, motto, and our commitment to business ethics and client performance.">
+    
+    <!-- Professional Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                        'display': ['Playfair Display', 'Georgia', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- External CSS Linked Here (Notice the ../ for going back one folder) -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="min-h-screen bg-white text-slate-900 selection:bg-[#0f82c4] selection:text-white transition-opacity duration-300">
+
+    <!-- ===== NAYA SLEEK HEADER (Transparent Theme for seamless blend) ===== -->
+    <header id="main-header" class="fixed w-full z-50 transition-all duration-500 bg-transparent border-b border-white/20">
+        <div id="header-inner" class="w-full px-4 sm:px-8 lg:px-12 xl:px-16 flex justify-between items-center transition-all duration-500 py-4">
+            
+            <!-- Left: Afsuham Logo -->
+            <div class="flex items-center shrink-0">
+                <a href="../index.html" class="flex items-center">
+                    <img 
+                        id="main-logo"
+                        src="../Afsuham-Logo.png" 
+                        alt="Afsuham Logo" 
+                        class="h-12 lg:h-14 w-auto object-contain transition-all duration-500 drop-shadow-md brightness-0 invert opacity-90"
+                    />
+                </a>
+            </div>
+
+            <!-- Right Side: Links, Location & Lang Switcher -->
+            <div id="desktop-menu-wrapper" class="hidden xl:flex items-center gap-6 2xl:gap-8 text-white transition-colors duration-500 drop-shadow-md rtl:flex-row-reverse">
+                
+                <!-- Nav Links Group -->
+                <nav class="flex items-center gap-6 2xl:gap-8 text-[14.5px] font-medium tracking-wide">
+                    
+                    <!-- Nav Link: ABOUT (Active Menu) -->
+                    <div class="nav-item relative py-2 cursor-pointer group">
+                        <a href="#" onclick="event.preventDefault();" class="flex items-center gap-1.5 text-white transition-colors">
+                            <span class="lang-text font-bold" data-en="About" data-ar="معلومات عنا" data-zh="关于" data-pt="Sobre">About</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="opacity-100 mt-0.5"><path d="m6 9 6 6 6-6"/></svg>
+                        </a>
+                        <div class="dropdown-bridge"></div>
+                        
+                        <!-- Dropdown -->
+                        <div class="dropdown-menu absolute top-[calc(100%+15px)] ltr:left-1/2 ltr:-translate-x-1/2 rtl:right-1/2 rtl:translate-x-1/2 w-[550px] bg-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] rounded-2xl opacity-0 invisible translate-y-4 transition-all duration-300 z-50 p-6 border border-slate-100 text-left rtl:text-right font-normal">
+                            <div class="grid grid-cols-2 gap-x-4 gap-y-1">
+                                <a href="what-we-do.html" class="block text-slate-600 font-semibold text-[14px] px-4 py-3 rounded-lg hover:bg-slate-50 hover:text-[#0f82c4] transition-colors"><span class="lang-text" data-en="What We Do">What We Do</span></a>
+                                <a href="our-people.html" class="block text-slate-600 font-semibold text-[14px] px-4 py-3 rounded-lg hover:bg-slate-50 hover:text-[#0f82c4] transition-colors"><span class="lang-text" data-en="Our People & Leadership">Our People & Leadership</span></a>
+                                <a href="what-we-believe.html" class="block text-[#0f82c4] bg-slate-50 font-semibold text-[14px] px-4 py-3 rounded-lg transition-colors"><span class="lang-text" data-en="What We Believe">What We Believe</span></a>
+                                <a href="client-results.html" class="block text-slate-600 font-semibold text-[14px] px-4 py-3 rounded-lg hover:bg-slate-50 hover:text-[#0f82c4] transition-colors"><span class="lang-text" data-en="Client Results">Client Results</span></a>
+                                <a href="awards-recognition.html" class="block text-slate-600 font-semibold text-[14px] px-4 py-3 rounded-lg hover:bg-slate-50 hover:text-[#0f82c4] transition-colors"><span class="lang-text" data-en="Award & Recognition">Award & Recognition</span></a>
+                                <a href="global-affiliations.html" class="block text-slate-600 font-semibold text-[14px] px-4 py-3 rounded-lg hover:bg-slate-50 hover:text-[#0f82c4] transition-colors"><span class="lang-text" data-en="Global Affiliations">Global Affiliations</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nav Link: INDUSTRIES -->
+                    <div class="nav-item relative py-2 cursor-pointer group">
+                        <a href="../industries.html" class="flex items-center gap-1.5 text-white/90 hover:text-white transition-colors">
+                            <span class="lang-text" data-en="Industries" data-ar="الصناعات" data-zh="行业" data-pt="Indústrias">Industries</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="opacity-80 mt-0.5"><path d="m6 9 6 6 6-6"/></svg>
+                        </a>
+                        <div class="dropdown-bridge"></div>
+                        <!-- Mega Menu -->
+                        <div class="dropdown-menu absolute top-[calc(100%+15px)] ltr:left-1/2 ltr:-translate-x-1/2 rtl:right-1/2 rtl:translate-x-1/2 w-[950px] bg-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] rounded-2xl opacity-0 invisible translate-y-4 transition-all duration-300 z-50 p-8 border border-slate-100 text-left rtl:text-right font-normal">
+                            <div class="grid grid-cols-4 gap-4 mb-6">
+                                <a href="../industries.html" class="block text-slate-900 font-extrabold text-[14px] px-4 py-3 rounded-lg hover:bg-slate-50 transition-colors"><span class="lang-text" data-en="Machinery & Equipment">Machinery & Equipment</span></a>
+                                <a href="../industries.html" class="block text-slate-900 font-extrabold text-[14px] px-4 py-3 rounded-lg hover:bg-slate-50 transition-colors"><span class="lang-text" data-en="Consumer Products">Consumer Products</span></a>
+                                <a href="../industries.html" class="block text-slate-900 font-extrabold text-[14px] px-4 py-3 rounded-lg hover:bg-slate-50 transition-colors leading-tight"><span class="lang-text" data-en="Forest Products, Paper & Packaging">Forest Products, Paper & Packaging</span></a>
+                                <a href="../industries.html" class="block text-slate-900 font-extrabold text-[14px] px-4 py-3 rounded-lg hover:bg-slate-50 transition-colors"><span class="lang-text" data-en="Media & Entertainment">Media & Entertainment</span></a>
+                            </div>
+                            <div class="h-px w-full bg-slate-100 mb-6"></div>
+                            <div class="grid grid-cols-4 gap-8">
+                                <div class="space-y-4">
+                                    <div>
+                                        <h4 class="text-slate-900 font-bold text-[14px] px-3 mb-2"><span class="lang-text" data-en="Energy & Natural Resources">Energy & Natural Resources</span></h4>
+                                        <ul class="space-y-1">
+                                            <li><a href="../industries.html" class="block px-3 py-2 rounded-lg text-slate-600 font-medium text-[13px] hover:text-[#0f82c4] hover:bg-slate-50 transition-colors"><span class="lang-text" data-en="Chemicals">Chemicals</span></a></li>
+                                            <li><a href="../industries.html" class="block px-3 py-2 rounded-lg text-slate-600 font-medium text-[13px] hover:text-[#0f82c4] hover:bg-slate-50 transition-colors"><span class="lang-text" data-en="Agribusiness">Agribusiness</span></a></li>
+                                            <li><a href="../industries.html" class="block px-3 py-2 rounded-lg text-slate-600 font-medium text-[13px] hover:text-[#0f82c4] hover:bg-slate-50 transition-colors"><span class="lang-text" data-en="Mining">Mining</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="space-y-4">
+                                    <div>
+                                        <h4 class="text-slate-900 font-bold text-[14px] px-3 mb-2"><span class="lang-text" data-en="Financial Services">Financial Services</span></h4>
+                                        <ul class="space-y-1">
+                                            <li><a href="../industries.html" class="block px-3 py-2 rounded-lg text-slate-600 font-medium text-[13px] hover:text-[#0f82c4] hover:bg-slate-50 transition-colors"><span class="lang-text" data-en="Banking">Banking</span></a></li>
+                                            <li><a href="../industries.html" class="block px-3 py-2 rounded-lg text-slate-600 font-medium text-[13px] hover:text-[#0f82c4] hover:bg-slate-50 transition-colors"><span class="lang-text" data-en="Insurance">Insurance</span></a></li>
+                                            <li><a href="../industries.html" class="block px-3 py-2 rounded-lg text-slate-600 font-medium text-[13px] hover:text-[#0f82c4] hover:bg-slate-50 transition-colors"><span class="lang-text" data-en="Payments">Payments</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="space-y-6">
+                                    <div>
+                                        <h4 class="text-slate-900 font-bold text-[14px] px-3 mb-2"><span class="lang-text" data-en="Healthcare">Healthcare</span></h4>
+                                        <ul class="space-y-1">
+                                            <li><a href="../industries.html" class="block px-3 py-2 rounded-lg text-slate-600 font-medium text-[13px] hover:text-[#0f82c4] hover:bg-slate-50 transition-colors"><span class="lang-text" data-en="Medical Technology">Medical Technology</span></a></li>
+                                            <li><a href="../industries.html" class="block px-3 py-2 rounded-lg text-slate-600 font-medium text-[13px] hover:text-[#0f82c4] hover:bg-slate-50 transition-colors"><span class="lang-text" data-en="Pharmaceuticals">Pharmaceuticals</span></a></li>
+                                            <li><a href="../industries.html" class="block px-3 py-2 rounded-lg text-slate-600 font-medium text-[13px] hover:text-[#0f82c4] hover:bg-slate-50 transition-colors leading-tight"><span class="lang-text" data-en="Healthcare Providers">Healthcare Providers</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="space-y-6">
+                                    <a href="../industries.html" class="block text-slate-900 font-bold text-[14px] px-3 py-2 rounded-lg hover:bg-slate-50 transition-colors"><span class="lang-text" data-en="Infrastructure & Construction">Infrastructure & Construction</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nav Link: CONSULTING SERVICES -->
+                    <div class="nav-item relative py-2 cursor-pointer group">
+                        <a href="../services.html" class="flex items-center gap-1.5 text-white/90 hover:text-white transition-colors">
+                            <span class="lang-text" data-en="Consulting Services">Consulting Services</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="opacity-80 mt-0.5"><path d="m6 9 6 6 6-6"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Nav Link: INSIGHTS -->
+                    <div class="nav-item relative py-2 cursor-pointer group">
+                        <a href="../insights.html" class="flex items-center gap-1.5 text-white/90 hover:text-white transition-colors">
+                            <span class="lang-text" data-en="Insights">Insights</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="opacity-80 mt-0.5"><path d="m6 9 6 6 6-6"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Nav Link: STRATEGY -->
+                    <div class="nav-item relative py-2 cursor-pointer group">
+                        <a href="../strategy.html" class="flex items-center gap-1.5 text-white/90 hover:text-white transition-colors">
+                            <span class="lang-text" data-en="Strategy">Strategy</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="opacity-80 mt-0.5"><path d="m6 9 6 6 6-6"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Nav Link: MEDICAL TECHNOLOGY -->
+                    <div class="nav-item relative py-2 cursor-pointer group">
+                        <a href="../medical-technology.html" class="flex items-center gap-1.5 text-white/90 hover:text-white transition-colors">
+                            <span class="lang-text" data-en="Medical Technology">Medical Technology</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="opacity-80 mt-0.5"><path d="m6 9 6 6 6-6"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Nav Link: CONTACT -->
+                    <a href="../contact.html" class="text-white/90 hover:text-white transition-colors py-2 block">
+                        <span class="lang-text" data-en="Contact">Contact</span>
+                    </a>
+                </nav>
+
+                <!-- Subtle Vertical Divider -->
+                <div class="h-6 w-px bg-white opacity-30 mx-1"></div>
+
+                <!-- Location & Language Tools -->
+                <div class="flex items-center gap-6 2xl:gap-8 text-[13px] font-medium opacity-90">
+                    <div class="flex items-center gap-1.5 cursor-default text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="mb-0.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span class="lang-text whitespace-nowrap tracking-wide" data-en="USA – Dubai – India">USA – Dubai – India</span>
+                    </div>
+
+                    <div class="relative group">
+                        <div id="lang-pill" class="flex items-center gap-1.5 cursor-pointer px-3.5 py-1.5 rounded-full border border-white/50 text-white hover:bg-white/10 transition-all duration-300">
+                            <span id="current-lang-display" class="text-[12px] font-bold tracking-wider leading-none">EN</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5"><path d="m6 9 6 6 6-6"/></svg>
+                        </div>
+                        
+                        <!-- Sleek Minimal White Dropdown for Language -->
+                        <div class="absolute top-full ltr:right-0 rtl:left-0 mt-3 w-32 bg-white border border-slate-100 shadow-[0_20px_50px_rgba(0,0,0,0.1)] rounded-xl py-2 z-50 opacity-0 invisible -translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 text-slate-800 text-left rtl:text-right">
+                            <button onclick="changeLanguage('en')" class="w-full text-left rtl:text-right px-5 py-2.5 text-sm font-semibold hover:bg-slate-50 hover:text-[#0f82c4] transition-colors">English</button>
+                            <button onclick="changeLanguage('ar')" class="w-full text-left rtl:text-right px-5 py-2.5 text-sm font-semibold hover:bg-slate-50 hover:text-[#0f82c4] transition-colors font-['Cairo']">العربية</button>
+                            <button onclick="changeLanguage('zh')" class="w-full text-left rtl:text-right px-5 py-2.5 text-sm font-semibold hover:bg-slate-50 hover:text-[#0f82c4] transition-colors">中文</button>
+                            <button onclick="changeLanguage('pt')" class="w-full text-left rtl:text-right px-5 py-2.5 text-sm font-semibold hover:bg-slate-50 hover:text-[#0f82c4] transition-colors">Português</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-toggle-btn" class="xl:hidden text-white transition-colors duration-500 drop-shadow-md">
+                <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                <svg id="icon-close" class="hidden" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== MINIMAL TRANSPARENT HERO SECTION ===== -->
+    <section class="relative pt-32 pb-24 md:pt-44 md:pb-32 w-full overflow-hidden flex items-center min-h-[400px] md:min-h-[450px]">
+        <!-- High-tech Architecture Background -->
+        <div class="absolute inset-0 z-0 w-full h-full overflow-hidden bg-slate-900">
+            <img 
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2000&auto=format&fit=crop" 
+                class="absolute inset-0 w-full h-full object-cover animate-zoom mix-blend-luminosity opacity-80" 
+                alt="What We Believe"
+            />
+            <!-- Transparent gradient overlay just like the homepage for perfect minimal contrast -->
+            <div class="absolute inset-0 bg-gradient-to-b from-black/90 via-black/40 to-transparent z-10"></div>
+        </div>
+
+        <div class="relative z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center mt-10 md:mt-16 text-white">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 tracking-tight drop-shadow-lg">
+                <span class="lang-text" data-en="What We Believe">What We Believe</span>
+            </h1>
+            <p class="text-lg sm:text-xl font-light mx-auto max-w-3xl drop-shadow-md">
+                <span class="lang-text" data-en="We believe that bold steps define the future. That the ambition to lead requires the courage to adapt. And that doing the right thing is rarely easy, but always worth it.">
+                    We believe that bold steps define the future. That the ambition to lead requires the courage to adapt. And that doing the right thing is rarely easy, but always worth it.
+                </span>
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== INTRO & FOUNDER'S VISION (MNC Split Layout Update) ===== -->
+    <section class="py-24 md:py-32 bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+                
+                <!-- Left: Text Content -->
+                <div class="pr-0 lg:pr-8">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="h-[2px] w-8 bg-[#0f82c4]"></div>
+                        <span class="text-[13px] font-bold tracking-[0.2em] text-[#0f82c4] uppercase">
+                            <span class="lang-text" data-en="Our Foundation">Our Foundation</span>
+                        </span>
+                    </div>
+                    
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-8 tracking-tight leading-tight">
+                        <span class="lang-text" data-en="Building an empire that attracts exceptional assets">Building an empire that attracts exceptional assets</span>
+                    </h2>
+                    
+                    <div class="text-[16px] text-slate-600 font-light leading-[1.8] space-y-6">
+                        <p class="lang-text" data-en="To help our distinguished clients make distinctive, lasting, and substantial 360* improvements in their performance and to build a Business Empire that attracts, develops, excites, and retains exceptional human assets.">
+                            To help our distinguished clients make distinctive, lasting, and substantial 360* improvements in their performance and to build a Business Empire that attracts, develops, excites, and retains exceptional human assets.
+                        </p>
+                        <div class="bg-slate-50 border-l-4 border-[#0f82c4] p-6 mt-6 relative">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" class="text-slate-200 absolute top-4 right-4 opacity-50"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.999v2C17.999 16 17 17 16 17s-1 .008-1 1.031V20c0 1 0 1 1 1z"/></svg>
+                            <p class="lang-text font-medium text-slate-700 italic relative z-10" data-en="We are a values-driven organization backed by organic Results. Our values reflect the thinking of our founder, Sarfraz Munshi who is a major force of inspiration in shaping the firm. They inform both our long-term strategy and the way we serve clients.">
+                                "We are a values-driven organization backed by organic Results. Our values reflect the thinking of our founder, Sarfraz Munshi who is a major force of inspiration in shaping the firm. They inform both our long-term strategy and the way we serve clients."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Premium Image -->
+                <div class="relative h-[450px] w-full overflow-hidden rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.1)]">
+                    <img 
+                        src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1000&auto=format&fit=crop" 
+                        alt="Our Foundation" 
+                        class="w-full h-full object-cover transition-transform duration-1000 hover:scale-105"
+                    />
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== REDESIGNED: MOTTO & MISSION (Clean Minimal Cards) ===== -->
+    <section class="py-24 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-10 lg:gap-16">
+                
+                <!-- Motto Card -->
+                <div class="bg-white p-10 lg:p-14 rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.03)] border border-slate-100 hover:shadow-[0_20px_50px_rgba(15,130,196,0.08)] hover:-translate-y-1 transition-all duration-300">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-12 h-[2px] bg-[#0f82c4]"></div>
+                        <h2 class="text-[13px] font-bold tracking-[0.2em] text-[#0f82c4] uppercase">
+                            <span class="lang-text" data-en="Our Motto">Our Motto</span>
+                        </h2>
+                    </div>
+                    <p class="text-2xl md:text-3xl font-display font-bold text-slate-900 leading-snug">
+                        <span class="lang-text" data-en="“To help create Organic, enduring change in the Universe by 25*8*53.”">
+                            “To help create Organic, enduring change in the Universe by 25*8*53.”
+                        </span>
+                    </p>
+                </div>
+
+                <!-- Mission Card -->
+                <div class="bg-white p-10 lg:p-14 rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.03)] border border-slate-100 hover:shadow-[0_20px_50px_rgba(15,130,196,0.08)] hover:-translate-y-1 transition-all duration-300">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-12 h-[2px] bg-[#0f82c4]"></div>
+                        <h2 class="text-[13px] font-bold tracking-[0.2em] text-[#0f82c4] uppercase">
+                            <span class="lang-text" data-en="Our Mission">Our Mission</span>
+                        </h2>
+                    </div>
+                    <p class="text-lg text-slate-600 font-light leading-relaxed">
+                        <span class="lang-text" data-en="To help our clients make distinctive, lasting, and substantial continuous improvements in their performance and to build a great business empire that attracts, develops, excites, and retains exceptional human assets.">
+                            To help our clients make distinctive, lasting, and substantial continuous improvements in their performance and to build a great business empire that attracts, develops, excites, and retains exceptional human assets.
+                        </span>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FIXED: ETHICS & BUSINESS VALUES (Pure HTML Grid) ===== -->
+    <section class="py-24 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center mb-16 md:mb-20 max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-6">
+                    <span class="lang-text" data-en="Our Ethics & Business Values">Our Ethics & Business Values</span>
+                </h2>
+                <p class="text-lg text-slate-500 font-light">
+                    We adhere to the highest professional ethics and business standards to ensure trust and transparency in everything we do.
+                </p>
+                <div class="w-16 h-[3px] bg-[#0f82c4] mx-auto mt-6"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                <!-- Item 1 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-[0_20px_50px_rgba(0,0,0,0.06)] transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-white border border-slate-200 flex items-center justify-center mb-6 group-hover:bg-[#0f82c4] group-hover:border-[#0f82c4] transition-colors duration-300 shadow-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#0f82c4] group-hover:text-white transition-colors duration-300"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></svg>
+                    </div>
+                    <h4 class="text-[17px] font-bold text-slate-900 mb-3">Client First</h4>
+                    <p class="text-[14px] text-slate-500 leading-relaxed">Put client interests ahead of our firm's at all times.</p>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-[0_20px_50px_rgba(0,0,0,0.06)] transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-white border border-slate-200 flex items-center justify-center mb-6 group-hover:bg-[#0f82c4] group-hover:border-[#0f82c4] transition-colors duration-300 shadow-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#0f82c4] group-hover:text-white transition-colors duration-300"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h4 class="text-[17px] font-bold text-slate-900 mb-3">High Standards</h4>
+                    <p class="text-[14px] text-slate-500 leading-relaxed">Maintain high standards and conditions for exceptional client service.</p>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-[0_20px_50px_rgba(0,0,0,0.06)] transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-white border border-slate-200 flex items-center justify-center mb-6 group-hover:bg-[#0f82c4] group-hover:border-[#0f82c4] transition-colors duration-300 shadow-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#0f82c4] group-hover:text-white transition-colors duration-300"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <h4 class="text-[17px] font-bold text-slate-900 mb-3">Ethical Integrity</h4>
+                    <p class="text-[14px] text-slate-500 leading-relaxed">Observe and practice high ethical standards in all interactions.</p>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-[0_20px_50px_rgba(0,0,0,0.06)] transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-white border border-slate-200 flex items-center justify-center mb-6 group-hover:bg-[#0f82c4] group-hover:border-[#0f82c4] transition-colors duration-300 shadow-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#0f82c4] group-hover:text-white transition-colors duration-300"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    </div>
+                    <h4 class="text-[17px] font-bold text-slate-900 mb-3">Confidentiality</h4>
+                    <p class="text-[14px] text-slate-500 leading-relaxed">Strictly preserve and protect client confidences and data.</p>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-[0_20px_50px_rgba(0,0,0,0.06)] transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-white border border-slate-200 flex items-center justify-center mb-6 group-hover:bg-[#0f82c4] group-hover:border-[#0f82c4] transition-colors duration-300 shadow-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#0f82c4] group-hover:text-white transition-colors duration-300"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                    <h4 class="text-[17px] font-bold text-slate-900 mb-3">Independent Perspective</h4>
+                    <p class="text-[14px] text-slate-500 leading-relaxed">Maintain and sustain an objective, independent perspective.</p>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-[0_20px_50px_rgba(0,0,0,0.06)] transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-white border border-slate-200 flex items-center justify-center mb-6 group-hover:bg-[#0f82c4] group-hover:border-[#0f82c4] transition-colors duration-300 shadow-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#0f82c4] group-hover:text-white transition-colors duration-300"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+                    </div>
+                    <h4 class="text-[17px] font-bold text-slate-900 mb-3">Resource Efficiency</h4>
+                    <p class="text-[14px] text-slate-500 leading-relaxed">Manage client and firm resources effectively and cost-efficiently.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== FIXED: IMPROVE PERFORMANCE (Clean Numbered Layout) ===== -->
+    <section class="py-24 md:py-32 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-16 lg:gap-24">
+                
+                <!-- Left Title Area -->
+                <div class="lg:col-span-5">
+                    <div class="lg:sticky lg:top-32">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-10 h-[2px] bg-[#0f82c4]"></div>
+                            <h3 class="text-xs font-bold tracking-[0.2em] text-[#0f82c4] uppercase">Our Impact</h3>
+                        </div>
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+                            <span class="lang-text" data-en="Improve Our Clients' Performance 360 Significantly*">Improve Our Clients' Performance 360 Significantly*</span>
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- Right List Area (Pure HTML) -->
+                <div class="lg:col-span-7 space-y-10 md:space-y-14">
+                    
+                    <!-- Item 1 -->
+                    <div class="flex gap-6 md:gap-8 group items-start border-b border-slate-800 pb-8">
+                        <div class="text-4xl md:text-5xl font-black text-slate-800 group-hover:text-[#0f82c4] transition-colors duration-500 select-none">
+                            01
+                        </div>
+                        <div class="pt-1 md:pt-2">
+                            <h4 class="text-xl md:text-2xl font-bold text-white transition-colors duration-300">
+                                Implementing the top-management approach
+                            </h4>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="flex gap-6 md:gap-8 group items-start border-b border-slate-800 pb-8">
+                        <div class="text-4xl md:text-5xl font-black text-slate-800 group-hover:text-[#0f82c4] transition-colors duration-500 select-none">
+                            02
+                        </div>
+                        <div class="pt-1 md:pt-2">
+                            <h4 class="text-xl md:text-2xl font-bold text-white transition-colors duration-300">
+                                Pursue holistic impact across organizations
+                            </h4>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="flex gap-6 md:gap-8 group items-start border-b border-slate-800 pb-8">
+                        <div class="text-4xl md:text-5xl font-black text-slate-800 group-hover:text-[#0f82c4] transition-colors duration-500 select-none">
+                            03
+                        </div>
+                        <div class="pt-1 md:pt-2">
+                            <h4 class="text-xl md:text-2xl font-bold text-white transition-colors duration-300">
+                                Bring innovations in management practice to clients
+                            </h4>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="flex gap-6 md:gap-8 group items-start border-b border-slate-800 pb-8">
+                        <div class="text-4xl md:text-5xl font-black text-slate-800 group-hover:text-[#0f82c4] transition-colors duration-500 select-none">
+                            04
+                        </div>
+                        <div class="pt-1 md:pt-2">
+                            <h4 class="text-xl md:text-2xl font-bold text-white transition-colors duration-300">
+                                Build client capabilities to sustain long-term improvement
+                            </h4>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="flex gap-6 md:gap-8 group items-start">
+                        <div class="text-4xl md:text-5xl font-black text-slate-800 group-hover:text-[#0f82c4] transition-colors duration-500 select-none">
+                            05
+                        </div>
+                        <div class="pt-1 md:pt-2">
+                            <h4 class="text-xl md:text-2xl font-bold text-white transition-colors duration-300">
+                                Build enduring relationships based on mutual trust
+                            </h4>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== READY TO TALK / CTA (Premium Clean Style) ===== -->
+    <section class="py-24 relative overflow-hidden bg-slate-50 border-t border-slate-200">
+        <!-- Very light minimal dot pattern -->
+        <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(#000 1.5px, transparent 1.5px); background-size: 35px 35px;"></div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+                
+                <!-- Left Info -->
+                <div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="h-[2px] w-6 bg-[#0f82c4]"></div>
+                        <span class="text-xs font-bold tracking-[0.2em] text-[#0f82c4] uppercase">
+                            <span class="lang-text" data-en="Let's Connect">Let's Connect</span>
+                        </span>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-6 tracking-tight leading-[1.15]">
+                        <span class="lang-text" data-en="Ready to talk?">Ready to talk?</span>
+                    </h2>
+                    <p class="text-slate-500 text-lg leading-relaxed mb-8">
+                        <span class="lang-text" data-en="We work with ambitious leaders who want to define the future, not hide from it. Together, we achieve extraordinary outcomes.">We work with ambitious leaders who want to define the future, not hide from it. Together, we achieve extraordinary outcomes.</span>
+                    </p>
+                </div>
+
+                <!-- Right Form -->
+                <div class="bg-white p-8 md:p-10 rounded-2xl shadow-[0_30px_80px_rgba(0,0,0,0.08)] border border-slate-100">
+                    <h4 class="text-slate-900 font-bold text-xl mb-6"><span class="lang-text" data-en="I want to talk to your experts in:">I want to talk to your experts in:</span></h4>
+                    
+                    <form action="#" method="post" class="space-y-6">
+                        <!-- Custom Select Dropdown -->
+                        <div class="relative">
+                            <select name="dropdown" class="w-full bg-slate-50 border border-slate-200 text-slate-700 text-[15px] font-medium rounded-xl focus:ring-[#0f82c4] focus:border-[#0f82c4] focus:bg-white block p-4 appearance-none cursor-pointer outline-none transition-all">
+                                <option value="Aerospace, Defense & Government Services">Aerospace, Defense & Government Services</option>
+                                <option value="Machinery & Equipment">Machinery & Equipment</option>
+                                <option value="Advanced Manufacturing & Services">Advanced Manufacturing & Services</option>
+                                <option value="Agribusiness">Agribusiness</option>
+                                <option value="Automotive & Mobility">Automotive & Mobility</option>
+                                <option value="Aviation">Aviation</option>
+                                <option value="Chemicals">Chemicals</option>
+                            </select>
+                            <div class="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none text-slate-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                            </div>
+                        </div>
+
+                        <!-- Email Input -->
+                        <div>
+                            <input type="email" name="your-email" required placeholder="Email Address *" class="w-full bg-slate-50 border border-slate-200 text-slate-900 text-[15px] font-medium rounded-xl focus:ring-[#0f82c4] focus:border-[#0f82c4] focus:bg-white block p-4 placeholder-slate-400 outline-none transition-all" />
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="w-full group inline-flex items-center justify-center gap-3 bg-[#0f82c4] text-white px-8 py-4 rounded-xl text-[14px] font-bold uppercase tracking-widest transition-all duration-300 hover:bg-[#0c6b9e] hover:shadow-lg hover:shadow-[#0f82c4]/30">
+                            <span class="lang-text" data-en="Submit">Submit</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transform group-hover:translate-x-1 transition-transform"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ULTRA-MODERN MNC FOOTER ===== -->
+    <footer class="bg-slate-950 text-slate-400 pt-24 pb-8 font-sans border-t border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 pb-20 border-b border-slate-800">
+                
+                <div class="lg:col-span-4 text-center md:text-left rtl:md:text-right flex flex-col items-center md:items-start pr-0 lg:pr-8 rtl:lg:pl-8 rtl:lg:pr-0">
+                    <a href="../index.html">
+                        <img src="../Afsuham-Logo.png" alt="Afsuham Logo" class="h-12 w-auto object-contain mb-8 hover:scale-105 transition-transform duration-300" />
+                    </a>
+                    <p class="text-[14px] leading-relaxed mb-8 text-slate-400 max-w-[320px]">
+                        <span class="lang-text" data-en="The Best Business Consulting Firm you can trust. Excellent Global Management Consulting for Creating Business Empires.">The Best Business Consulting Firm you can trust. Excellent Global Management Consulting for Creating Business Empires.</span>
+                    </p>
+                    <div class="flex gap-5">
+                        <a href="#" class="text-slate-500 hover:text-white transition-colors duration-300">
+                            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                        </a>
+                        <a href="#" class="text-slate-500 hover:text-white transition-colors duration-300">
+                            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="#" class="text-slate-500 hover:text-white transition-colors duration-300">
+                            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-2 text-center md:text-left rtl:md:text-right">
+                    <h4 class="text-slate-100 font-bold text-[12px] tracking-[0.2em] uppercase mb-8">
+                        <span class="lang-text" data-en="Our Company">Our Company</span>
+                    </h4>
+                    <ul class="space-y-4 text-[14px]">
+                        <li><a href="#" class="hover:text-white transition-colors"><span class="lang-text" data-en="About Us">About Us</span></a></li>
+                        <li><a href="../industries.html" class="hover:text-white transition-colors"><span class="lang-text" data-en="Industries">Industries</span></a></li>
+                        <li><a href="../services.html" class="hover:text-white transition-colors"><span class="lang-text" data-en="Consulting Services">Consulting Services</span></a></li>
+                        <li><a href="client-results.html" class="hover:text-white transition-colors"><span class="lang-text" data-en="Client Results">Client Results</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-2 text-center md:text-left rtl:md:text-right">
+                    <h4 class="text-slate-100 font-bold text-[12px] tracking-[0.2em] uppercase mb-8">
+                        <span class="lang-text" data-en="Expertise">Expertise</span>
+                    </h4>
+                    <ul class="space-y-4 text-[14px]">
+                        <li><a href="../insights.html" class="hover:text-white transition-colors"><span class="lang-text" data-en="Insights">Insights</span></a></li>
+                        <li><a href="../strategy.html" class="hover:text-white transition-colors"><span class="lang-text" data-en="Strategy">Strategy</span></a></li>
+                        <li><a href="../medical-technology.html" class="hover:text-white transition-colors"><span class="lang-text" data-en="Medical Technology">Medical Technology</span></a></li>
+                        <li><a href="global-affiliations.html" class="hover:text-white transition-colors"><span class="lang-text" data-en="Global Affiliations">Global Affiliations</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-4 text-center md:text-left rtl:md:text-right lg:pl-10 rtl:lg:pl-0 rtl:lg:pr-10">
+                    <h4 class="text-slate-100 font-bold text-[12px] tracking-[0.2em] uppercase mb-8">
+                        <span class="lang-text" data-en="Get In Touch">Get In Touch</span>
+                    </h4>
+                    <div class="space-y-8 flex flex-col items-center md:items-start">
+                        <div class="flex items-start gap-4">
+                            <div class="mt-1 text-slate-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            </div>
+                            <div class="text-left rtl:text-right">
+                                <span class="block text-[11px] text-slate-500 font-bold tracking-widest uppercase mb-1">
+                                    <span class="lang-text" data-en="General Inquiries">General Inquiries</span>
+                                </span>
+                                <a href="mailto:corporate@afsuham.com" class="text-[15px] text-slate-200 hover:text-white transition-colors">corporate@afsuham.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="mt-1 text-slate-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div class="text-left rtl:text-right">
+                                <span class="block text-[11px] text-slate-500 font-bold tracking-widest uppercase mb-1">
+                                    <span class="lang-text" data-en="Global Offices">Global Offices</span>
+                                </span>
+                                <span class="text-[15px] text-slate-200">
+                                    <span class="lang-text" data-en="USA &bull; Dubai &bull; India">USA &bull; Dubai &bull; India</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="mt-8 flex flex-col md:flex-row justify-between items-center gap-6 text-[13px] text-slate-500">
+                <p>&copy; 2026 <span class="lang-text" data-en="Afsuham Holdings Inc. All rights reserved.">Afsuham Holdings Inc. All rights reserved.</span></p>
+                <div class="flex gap-6 md:gap-8">
+                    <a href="#" class="hover:text-slate-300 transition-colors"><span class="lang-text" data-en="Privacy Policy">Privacy Policy</span></a>
+                    <a href="#" class="hover:text-slate-300 transition-colors"><span class="lang-text" data-en="Terms of Service">Terms of Service</span></a>
+                    <a href="#" class="hover:text-slate-300 transition-colors"><span class="lang-text" data-en="Cookie Settings">Cookie Settings</span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External Script Linked Here -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

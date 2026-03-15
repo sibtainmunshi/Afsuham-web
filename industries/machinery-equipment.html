@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machinery & Equipment Consulting | Afsuham Holdings Inc</title>
+    <meta name="description" content="Transforming the Machinery & Equipment sector through digital innovation, Industry 4.0, and supply chain resilience. Discover Afsuham's expertise.">
+    
+    <!-- Professional Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                        'display': ['Playfair Display', 'Georgia', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- External CSS Linked Here (Notice the ../ for going back to root folder) -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="min-h-screen bg-white text-slate-900 selection:bg-[#0f82c4] selection:text-white transition-opacity duration-300">
+
+    <!-- ===== NAYA SLEEK HEADER (Transparent Theme for seamless blend) ===== -->
+    <header id="main-header" class="fixed w-full z-50 transition-all duration-500 bg-transparent border-b border-white/20">
+        <div id="header-inner" class="w-full px-4 sm:px-8 lg:px-12 xl:px-16 flex justify-between items-center transition-all duration-500 py-3">
+            
+            <!-- Left: Afsuham Logo -->
+            <div class="flex items-center shrink-0">
+                <a href="../index.html" class="flex items-center">
+                    <img 
+                        id="main-logo"
+                        src="../Afsuham-Logo.png" 
+                        alt="Afsuham Logo" 
+                        class="h-12 lg:h-14 w-auto object-contain transition-all duration-500 drop-shadow-md brightness-0 invert opacity-90"
+                    />
+                </a>
+            </div>
+
+            <!-- Right Side: Links, Location & Lang Switcher -->
+            <div id="desktop-menu-wrapper" class="hidden xl:flex items-center gap-6 2xl:gap-8 text-white transition-colors duration-500 drop-shadow-md rtl:flex-row-reverse">
+                
+                <!-- Nav Links Group -->
+                <nav class="flex items-center gap-6 2xl:gap-8 text-[14.5px] font-medium tracking-wide">
+                    
+                    <!-- Nav Link: ABOUT -->
+                    <div class="nav-item relative py-2 cursor-pointer group">
+                        <a href="#" onclick="event.preventDefault();" class="flex items-center gap-1.5 text-white/90 hover:text-white transition-colors">
+                            <span class="lang-text" data-en="About">About</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="opacity-80 mt-0.5"><path d="m6 9 6 6 6-6"/></svg>
+                        </a>
+                        <div class="dropdown-bridge"></div>
+                        
+                        <!-- Dropdown (Links point to about-us folder) -->
+                        <div class="dropdown-menu absolute top-[calc(100%+15px)] ltr:left-1/2 ltr:-translate-x-1/2 rtl:right-1/2 rtl:translate-x-1/2 w-[550px] bg-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] rounded-2xl opacity-0 invisible translate-y-4 transition-all duration-300 z-50 p-6 border border-slate-100 text-left rtl:text-right font-normal">
+                            <div class="grid grid-cols-2 gap-x-4 gap-y-1">
+                                <a href="../about-us/what-we-do.html" class="block text-slate-600 font-semibold text-[14px] px-4 py-3 rounded-lg hover:bg-slate-50 hover:text-[#0f82c4] transition-colors"><span class="lang-text" data-en="What We Do">What We Do</span></a>
+                                <a href="../about-us/our-people.html" class="block text-slate-600 font-semibold text-[14px] px-4 py-3 rounded-lg hover:bg-slate-50 hover:text-[#0f82c4] transition-colors"><span class="lang-text" data-en="Our People & Leadership">Our People & Leadership</span></a>
+                                <a href="../about-us/what-we-believe.html" class="block text-slate-600 font-semibold text-[14px] px-4 py-3 rounded-lg hover:bg-slate-50 hover:text-[#0f82c4] transition-colors"><span class="lang-text" data-en="What We Believe">What We Believe</span></a>
+                                <a href="../about-us/client-results.html" class="block text-slate-600 font-semibold text-[14px] px-4 py-3 rounded-lg hover:bg-slate-50 hover:text-[#0f82c4] transition-colors"><span class="lang-text" data-en="Client Results">Client Results</span></a>
+                                <a href="../about-us/awards-recognition.html" class="block text-slate-600 font-semibold text-[14px] px-4 py-3 rounded-lg hover:bg-slate-50 hover:text-[#0f82c4] transition-colors"><span class="lang-text" data-en="Award & Recognition">Award & Recognition</span></a>
+                                <a href="../about-us/global-affiliations.html" class="block text-slate-600 font-semibold text-[14px] px-4 py-3 rounded-lg hover:bg-slate-50 hover:text-[#0f82c4] transition-colors"><span class="lang-text" data-en="Global Affiliations">Global Affiliations</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nav Link: INDUSTRIES (Active) -->
+                    <div class="nav-item relative py-2 cursor-pointer group">
+                        <a href="#" onclick="event.preventDefault();" class="flex items-center gap-1.5 text-white transition-colors">
+                            <span class="lang-text font-bold" data-en="Industries">Industries</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="opacity-100 mt-0.5"><path d="m6 9 6 6 6-6"/></svg>
+                        </a>
+                        <div class="dropdown-bridge"></div>
+                        <!-- Mega Menu -->
+                        <div class="dropdown-menu absolute top-[calc(100%+15px)] ltr:left-1/2 ltr:-translate-x-1/2 rtl:right-1/2 rtl:translate-x-1/2 w-[950px] bg-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] rounded-2xl opacity-0 invisible translate-y-4 transition-all duration-300 z-50 p-8 border border-slate-100 text-left rtl:text-right font-normal">
+                            <div class="grid grid-cols-4 gap-4 mb-6">
+                                <a href="machinery-equipment.html" class="block text-[#0f82c4] bg-slate-50 font-extrabold text-[14px] px-4 py-3 rounded-lg transition-colors"><span class="lang-text" data-en="Machinery & Equipment">Machinery & Equipment</span></a>
+                                <a href="consumer-products.html" class="block text-slate-900 font-extrabold text-[14px] px-4 py-3 rounded-lg hover:bg-slate-50 transition-colors"><span class="lang-text" data-en="Consumer Products">Consumer Products</span></a>
+                                <a href="forest-products.html" class="block text-slate-900 font-extrabold text-[14px] px-4 py-3 rounded-lg hover:bg-slate-50 transition-colors leading-tight"><span class="lang-text" data-en="Forest Products, Paper & Packaging">Forest Products, Paper & Packaging</span></a>
+                                <a href="media-entertainment.html" class="block text-slate-900 font-extrabold text-[14px] px-4 py-3 rounded-lg hover:bg-slate-50 transition-colors"><span class="lang-text" data-en="Media & Entertainment">Media & Entertainment</span></a>
+                            </div>
+                            <div class="h-px w-full bg-slate-100 mb-6"></div>
+                            <div class="grid grid-cols-4 gap-8">
+                                <div class="space-y-4">
+                                    <div>
+                                        <h4 class="text-slate-900 font-bold text-[14px] px-3 mb-2"><span class="lang-text" data-en="Energy & Natural Resources">Energy & Natural Resources</span></h4>
+                                        <ul class="space-y-1">
+                                            <li><a href="chemicals.html" class="block px-3 py-2 rounded-lg text-slate-600 font-medium text-[13px] hover:text-[#0f82c4] hover:bg-slate-50 transition-colors"><span class="lang-text" data-en="Chemicals">Chemicals</span></a></li>
+                                            <li><a href="agribusiness.html" class="block px-3 py-2 rounded-lg text-slate-600 font-medium text-[13px] hover:text-[#0f82c4] hover:bg-slate-50 transition-colors"><span class="lang-text" data-en="Agribusiness">Agribusiness</span></a></li>
+                                            <li><a href="mining.html" class="block px-3 py-2 rounded-lg text-slate-600 font-medium text-[13px] hover:text-[#0f82c4] hover:bg-slate-50 transition-colors"><span class="lang-text" data-en="Mining">Mining</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="space-y-4">
+                                    <div>
+                                        <h4 class="text-slate-900 font-bold text-[14px] px-3 mb-2"><span class="lang-text" data-en="Financial Services">Financial Services</span></h4>
+                                        <ul class="space-y-1">
+                                            <li><a href="banking.html" class="block px-3 py-2 rounded-lg text-slate-600 font-medium text-[13px] hover:text-[#0f82c4] hover:bg-slate-50 transition-colors"><span class="lang-text" data-en="Banking">Banking</span></a></li>
+                                            <li><a href="insurance.html" class="block px-3 py-2 rounded-lg text-slate-600 font-medium text-[13px] hover:text-[#0f82c4] hover:bg-slate-50 transition-colors"><span class="lang-text" data-en="Insurance">Insurance</span></a></li>
+                                            <li><a href="payments.html" class="block px-3 py-2 rounded-lg text-slate-600 font-medium text-[13px] hover:text-[#0f82c4] hover:bg-slate-50 transition-colors"><span class="lang-text" data-en="Payments">Payments</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="space-y-6">
+                                    <div>
+                                        <h4 class="text-slate-900 font-bold text-[14px] px-3 mb-2"><span class="lang-text" data-en="Healthcare">Healthcare</span></h4>
+                                        <ul class="space-y-1">
+                                            <li><a href="medical-technology.html" class="block px-3 py-2 rounded-lg text-slate-600 font-medium text-[13px] hover:text-[#0f82c4] hover:bg-slate-50 transition-colors"><span class="lang-text" data-en="Medical Technology">Medical Technology</span></a></li>
+                                            <li><a href="pharmaceuticals.html" class="block px-3 py-2 rounded-lg text-slate-600 font-medium text-[13px] hover:text-[#0f82c4] hover:bg-slate-50 transition-colors"><span class="lang-text" data-en="Pharmaceuticals">Pharmaceuticals</span></a></li>
+                                            <li><a href="healthcare-providers.html" class="block px-3 py-2 rounded-lg text-slate-600 font-medium text-[13px] hover:text-[#0f82c4] hover:bg-slate-50 transition-colors leading-tight"><span class="lang-text" data-en="Healthcare Providers">Healthcare Providers</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="space-y-6">
+                                    <a href="metals.html" class="block text-slate-900 font-bold text-[14px] px-3 py-2 rounded-lg hover:bg-slate-50 transition-colors"><span class="lang-text" data-en="Infrastructure & Construction">Infrastructure & Construction</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nav Link: CONSULTING SERVICES -->
+                    <div class="nav-item relative py-2 cursor-pointer group">
+                        <a href="../services.html" class="flex items-center gap-1.5 text-white/90 hover:text-white transition-colors">
+                            <span class="lang-text" data-en="Consulting Services">Consulting Services</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="opacity-80 mt-0.5"><path d="m6 9 6 6 6-6"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Nav Link: INSIGHTS -->
+                    <div class="nav-item relative py-2 cursor-pointer group">
+                        <a href="../insights.html" class="flex items-center gap-1.5 text-white/90 hover:text-white transition-colors">
+                            <span class="lang-text" data-en="Insights">Insights</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="opacity-80 mt-0.5"><path d="m6 9 6 6 6-6"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Nav Link: STRATEGY -->
+                    <div class="nav-item relative py-2 cursor-pointer group">
+                        <a href="../strategy.html" class="flex items-center gap-1.5 text-white/90 hover:text-white transition-colors">
+                            <span class="lang-text" data-en="Strategy">Strategy</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="opacity-80 mt-0.5"><path d="m6 9 6 6 6-6"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Nav Link: CONTACT -->
+                    <a href="../contact.html" class="text-white/90 hover:text-white transition-colors py-2 block">
+                        <span class="lang-text" data-en="Contact">Contact</span>
+                    </a>
+                </nav>
+
+                <!-- Subtle Vertical Divider -->
+                <div class="h-6 w-px bg-white opacity-30 mx-1"></div>
+
+                <!-- Location & Language Tools -->
+                <div class="flex items-center gap-6 2xl:gap-8 text-[13px] font-medium opacity-90">
+                    <div class="flex items-center gap-1.5 cursor-default text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="mb-0.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span class="lang-text whitespace-nowrap tracking-wide" data-en="USA – Dubai – India">USA – Dubai – India</span>
+                    </div>
+
+                    <div class="relative group">
+                        <div id="lang-pill" class="flex items-center gap-1.5 cursor-pointer px-3.5 py-1.5 rounded-full border border-white/50 text-white hover:bg-white/10 transition-all duration-300">
+                            <span id="current-lang-display" class="text-[12px] font-bold tracking-wider leading-none">EN</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5"><path d="m6 9 6 6 6-6"/></svg>
+                        </div>
+                        
+                        <!-- Sleek Minimal White Dropdown for Language -->
+                        <div class="absolute top-full ltr:right-0 rtl:left-0 mt-3 w-32 bg-white border border-slate-100 shadow-[0_20px_50px_rgba(0,0,0,0.1)] rounded-xl py-2 z-50 opacity-0 invisible -translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 text-slate-800 text-left rtl:text-right">
+                            <button onclick="changeLanguage('en')" class="w-full text-left rtl:text-right px-5 py-2.5 text-sm font-semibold hover:bg-slate-50 hover:text-[#0f82c4] transition-colors">English</button>
+                            <button onclick="changeLanguage('ar')" class="w-full text-left rtl:text-right px-5 py-2.5 text-sm font-semibold hover:bg-slate-50 hover:text-[#0f82c4] transition-colors font-['Cairo']">العربية</button>
+                            <button onclick="changeLanguage('zh')" class="w-full text-left rtl:text-right px-5 py-2.5 text-sm font-semibold hover:bg-slate-50 hover:text-[#0f82c4] transition-colors">中文</button>
+                            <button onclick="changeLanguage('pt')" class="w-full text-left rtl:text-right px-5 py-2.5 text-sm font-semibold hover:bg-slate-50 hover:text-[#0f82c4] transition-colors">Português</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-toggle-btn" class="xl:hidden text-white transition-colors duration-500 drop-shadow-md">
+                <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                <svg id="icon-close" class="hidden" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== INDUSTRY HERO SECTION (Minimal Transparent Layout) ===== -->
+    <section class="relative pt-32 pb-24 md:pt-44 md:pb-32 w-full overflow-hidden flex items-center min-h-[400px] md:min-h-[450px]">
+        <!-- High-tech Machinery / Industry Background -->
+        <div class="absolute inset-0 z-0 w-full h-full overflow-hidden">
+            <img 
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2000&auto=format&fit=crop" 
+                class="absolute inset-0 w-full h-full object-cover animate-zoom" 
+                alt="Machinery & Equipment Industry"
+            />
+            <!-- Transparent gradient overlay just like the homepage for perfect minimal contrast -->
+            <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/40 z-10"></div>
+        </div>
+
+        <div class="relative z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center mt-10 md:mt-16">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 tracking-tight drop-shadow-lg">
+                <span class="lang-text" data-en="Machinery & Equipment">Machinery & Equipment</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-100 font-light mx-auto max-w-3xl drop-shadow-md">
+                <span class="lang-text" data-en="Technology isn’t just marching on: It’s racing ahead.">
+                    Technology isn’t just marching on: It’s racing ahead.
+                </span>
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== INTRO & OVERVIEW (Premium Layout with Exact Old Text) ===== -->
+    <section class="py-20 md:py-28 bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+                
+                <!-- Left: Exact Old Text Content -->
+                <div class="lg:col-span-7 pr-0 lg:pr-8">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="h-[2px] w-6 bg-[#6db5d8]"></div>
+                        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
+                            <span class="lang-text" data-en="Overview">Overview</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="text-[16px] text-slate-600 font-light leading-[1.8] space-y-6">
+                        <p class="lang-text" data-en="Machinery and equipment makers are hurtling toward a new reality over the next decade, propelled by advanced Industry 4.0 technologies that will enable them to reinvent their capabilities and embrace solutions-centric business models.">
+                            Machinery and equipment makers are hurtling toward a new reality over the next decade, propelled by advanced Industry 4.0 technologies that will enable them to reinvent their capabilities and embrace solutions-centric business models.
+                        </p>
+                        <p class="lang-text" data-en="New technologies are facilitating ever more complex forms of tightly integrated, end-to-end automation supported by powerful data analytics. New players are entering the market unburdened by legacy business models.">
+                            New technologies are facilitating ever more complex forms of tightly integrated, end-to-end automation supported by powerful data analytics. New players are entering the market unburdened by legacy business models.
+                        </p>
+                        <p class="lang-text" data-en="Given that profit pools in the machinery, systems and control market are expected to double by 2030, companies have plenty of incentive to modernize their tech stacks. We combine deep expertise in digital transformation, Industry 4.0, advanced analytics, cost transformation, organizational design and other disciplines to help you develop and execute a winning strategy.">
+                            Given that profit pools in the machinery, systems and control market are expected to double by 2030, companies have plenty of incentive to modernize their tech stacks. We combine deep expertise in digital transformation, Industry 4.0, advanced analytics, cost transformation, organizational design and other disciplines to help you develop and execute a winning strategy.
+                        </p>
+                        <p class="lang-text" data-en="We can also help you improve all core aspects of operations—from procurement, supply chain and operating models to customer experience, B2B sales and marketing, and engineering excellence—so you achieve significantly higher levels of efficiency and become a performance leader. Our deep experience in private equity and M&A—including unmatched capabilities in due diligence—can help you navigate industry consolidation, analyze long-term market scenarios, and stay out front in a highly dynamic industry.">
+                            We can also help you improve all core aspects of operations—from procurement, supply chain and operating models to customer experience, B2B sales and marketing, and engineering excellence—so you achieve significantly higher levels of efficiency and become a performance leader. Our deep experience in private equity and M&A—including unmatched capabilities in due diligence—can help you navigate industry consolidation, analyze long-term market scenarios, and stay out front in a highly dynamic industry.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right: Premium Image (Keeping the MNC standard) -->
+                <div class="lg:col-span-5 relative h-[400px] lg:h-full min-h-[450px] w-full overflow-hidden rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.08)] sticky top-32">
+                    <img 
+                        src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1000&auto=format&fit=crop" 
+                        alt="Smart Manufacturing" 
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 hover:scale-105"
+                    />
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== READY TO TALK / CTA (Exact Old Clean Style without cards) ===== -->
+    <section class="py-20 md:py-28 relative overflow-hidden bg-white border-t border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+                
+                <!-- Left Info -->
+                <div class="pt-2">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="h-[2px] w-6 bg-[#6db5d8]"></div>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6 tracking-tight">
+                        <span class="lang-text" data-en="Ready to talk?">Ready to talk?</span>
+                    </h2>
+                    <p class="text-slate-500 text-[16px] leading-relaxed">
+                        <span class="lang-text" data-en="We work with ambitious leaders who want to define the future, not hide from it. Together, we achieve extraordinary outcomes.">We work with ambitious leaders who want to define the future, not hide from it. Together, we achieve extraordinary outcomes.</span>
+                    </p>
+                </div>
+
+                <!-- Right Form (Clean minimal inputs like old site) -->
+                <div>
+                    <h4 class="text-slate-900 font-bold text-xl mb-6"><span class="lang-text" data-en="I want to talk to your experts in:">I want to talk to your experts in:</span></h4>
+                    
+                    <form action="#" method="post" class="space-y-4">
+                        <!-- Custom Select Dropdown -->
+                        <div class="relative">
+                            <select name="dropdown" class="w-full bg-[#f4f7f9] text-slate-500 text-[14px] rounded-sm focus:ring-[#6db5d8] focus:border-[#6db5d8] block p-4 appearance-none cursor-pointer outline-none transition-colors border-none">
+                                <option value="Aerospace, Defense & Government Services">Aerospace, Defense & Government Services</option>
+                                <option value="Machinery & Equipment">Machinery & Equipment</option>
+                                <option value="Advanced Manufacturing & Services">Advanced Manufacturing & Services</option>
+                                <option value="Agribusiness">Agribusiness</option>
+                                <option value="Automotive & Mobility">Automotive & Mobility</option>
+                                <option value="Chemicals">Chemicals</option>
+                            </select>
+                            <div class="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none text-slate-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                            </div>
+                        </div>
+
+                        <!-- Email Input -->
+                        <div>
+                            <input type="email" name="your-email" required placeholder="Email *" class="w-full bg-[#f4f7f9] text-slate-900 text-[14px] rounded-sm focus:ring-[#6db5d8] focus:border-[#6db5d8] block p-4 placeholder-slate-400 outline-none transition-colors border-none" />
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="bg-[#6db5d8] text-white px-8 py-3.5 rounded-sm text-[13px] font-bold uppercase tracking-wider transition-colors hover:bg-[#5aa4c7] mt-2">
+                            <span class="lang-text" data-en="Submit">Submit</span>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ULTRA-MODERN MNC FOOTER ===== -->
+    <footer class="bg-slate-950 text-slate-400 pt-24 pb-8 font-sans border-t border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 pb-20 border-b border-slate-800">
+                
+                <div class="lg:col-span-4 text-center md:text-left rtl:md:text-right flex flex-col items-center md:items-start pr-0 lg:pr-8 rtl:lg:pl-8 rtl:lg:pr-0">
+                    <a href="../index.html">
+                        <img src="../Afsuham-Logo.png" alt="Afsuham Logo" class="h-12 w-auto object-contain mb-8 hover:scale-105 transition-transform duration-300" />
+                    </a>
+                    <p class="text-[14px] leading-relaxed mb-8 text-slate-400 max-w-[320px]">
+                        <span class="lang-text" data-en="The Best Business Consulting Firm you can trust. Excellent Global Management Consulting for Creating Business Empires.">The Best Business Consulting Firm you can trust. Excellent Global Management Consulting for Creating Business Empires.</span>
+                    </p>
+                    <div class="flex gap-5">
+                        <a href="#" class="text-slate-500 hover:text-white transition-colors duration-300">
+                            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                        </a>
+                        <a href="#" class="text-slate-500 hover:text-white transition-colors duration-300">
+                            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="#" class="text-slate-500 hover:text-white transition-colors duration-300">
+                            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-2 text-center md:text-left rtl:md:text-right">
+                    <h4 class="text-slate-100 font-bold text-[12px] tracking-[0.2em] uppercase mb-8">
+                        <span class="lang-text" data-en="Our Company">Our Company</span>
+                    </h4>
+                    <ul class="space-y-4 text-[14px]">
+                        <li><a href="../about-us/what-we-do.html" class="hover:text-white transition-colors"><span class="lang-text" data-en="About Us">About Us</span></a></li>
+                        <li><a href="../industries.html" class="hover:text-white transition-colors"><span class="lang-text" data-en="Industries">Industries</span></a></li>
+                        <li><a href="../services.html" class="hover:text-white transition-colors"><span class="lang-text" data-en="Consulting Services">Consulting Services</span></a></li>
+                        <li><a href="../about-us/client-results.html" class="hover:text-white transition-colors"><span class="lang-text" data-en="Client Results">Client Results</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-2 text-center md:text-left rtl:md:text-right">
+                    <h4 class="text-slate-100 font-bold text-[12px] tracking-[0.2em] uppercase mb-8">
+                        <span class="lang-text" data-en="Expertise">Expertise</span>
+                    </h4>
+                    <ul class="space-y-4 text-[14px]">
+                        <li><a href="../insights.html" class="hover:text-white transition-colors"><span class="lang-text" data-en="Insights">Insights</span></a></li>
+                        <li><a href="../strategy.html" class="hover:text-white transition-colors"><span class="lang-text" data-en="Strategy">Strategy</span></a></li>
+                        <li><a href="../medical-technology.html" class="hover:text-white transition-colors"><span class="lang-text" data-en="Medical Technology">Medical Technology</span></a></li>
+                        <li><a href="../about-us/global-affiliations.html" class="hover:text-white transition-colors"><span class="lang-text" data-en="Global Affiliations">Global Affiliations</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-4 text-center md:text-left rtl:md:text-right lg:pl-10 rtl:lg:pl-0 rtl:lg:pr-10">
+                    <h4 class="text-slate-100 font-bold text-[12px] tracking-[0.2em] uppercase mb-8">
+                        <span class="lang-text" data-en="Get In Touch">Get In Touch</span>
+                    </h4>
+                    <div class="space-y-8 flex flex-col items-center md:items-start">
+                        <div class="flex items-start gap-4">
+                            <div class="mt-1 text-slate-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            </div>
+                            <div class="text-left rtl:text-right">
+                                <span class="block text-[11px] text-slate-500 font-bold tracking-widest uppercase mb-1">
+                                    <span class="lang-text" data-en="General Inquiries">General Inquiries</span>
+                                </span>
+                                <a href="mailto:corporate@afsuham.com" class="text-[15px] text-slate-200 hover:text-white transition-colors">corporate@afsuham.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="mt-1 text-slate-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div class="text-left rtl:text-right">
+                                <span class="block text-[11px] text-slate-500 font-bold tracking-widest uppercase mb-1">
+                                    <span class="lang-text" data-en="Global Offices">Global Offices</span>
+                                </span>
+                                <span class="text-[15px] text-slate-200">
+                                    <span class="lang-text" data-en="USA &bull; Dubai &bull; India">USA &bull; Dubai &bull; India</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="mt-8 flex flex-col md:flex-row justify-between items-center gap-6 text-[13px] text-slate-500">
+                <p>&copy; 2026 <span class="lang-text" data-en="Afsuham Holdings Inc. All rights reserved.">Afsuham Holdings Inc. All rights reserved.</span></p>
+                <div class="flex gap-6 md:gap-8">
+                    <a href="#" class="hover:text-slate-300 transition-colors"><span class="lang-text" data-en="Privacy Policy">Privacy Policy</span></a>
+                    <a href="#" class="hover:text-slate-300 transition-colors"><span class="lang-text" data-en="Terms of Service">Terms of Service</span></a>
+                    <a href="#" class="hover:text-slate-300 transition-colors"><span class="lang-text" data-en="Cookie Settings">Cookie Settings</span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External Script Linked Here -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

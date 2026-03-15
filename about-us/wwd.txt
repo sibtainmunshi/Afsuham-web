@@ -1,0 +1,21 @@
+<section class="relative pt-40 pb-32 lg:pt-56 lg:pb-40 w-full overflow-hidden bg-slate-900 flex items-center">
+        <!-- Professional Architecture/Corporate Background -->
+        <div class="absolute inset-0 z-0 w-full h-full overflow-hidden">
+            <img 
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000&auto=format&fit=crop" 
+                class="absolute inset-0 w-full h-full object-cover opacity-40 animate-zoom" 
+                alt="Corporate Architecture"
+            />
+            <!-- Dark gradient overlay for modern look -->
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-950/90 via-slate-900/70 to-slate-950 z-10"></div>
+        </div>
+
+        <div class="relative z-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
+            <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold text-white leading-tight tracking-tight mb-8 drop-shadow-md">
+                <span class="lang-text" data-en="What We Do">What We Do</span>
+            </h1>
+            <p class="text-xl sm:text-2xl text-slate-300 font-light mx-auto leading-relaxed max-w-3xl">
+                <span class="lang-text" data-en="We help you see the world differently, discover opportunities you may never have imagined and achieve results that bridge what is with what can be.">We help you see the world differently, discover opportunities you may never have imagined and achieve results that bridge what is with what can be.</span>
+            </p>
+        </div>
+    </section>
